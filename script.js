@@ -1,4 +1,5 @@
 // Text Adventure Game
+
 const enter = "Please enter 1 or 2 for your answer";
 
 const gameOver = "Sorry GAME OVER!";
@@ -37,3 +38,23 @@ OR
 ${enter}`;
 const gameOver5 = `You looked at the trap and the light BLINDED YOU! ${gameOver}`;
 const win = `The ghost trap sucked Slimer in and closed. CONGRATULATIONS! YOU CAUGHT SLIMER!!!`;
+
+// Alerts the user to start the game
+alert(start);
+
+// Sets the value of userInput to the user's entry
+let userInput = prompt(q1);
+
+// 1st Conditional Statement
+// NOTE: Prompt returns the value entered as a string. That is why double equals == is used instead of triple equals === here.
+if (userInput == 1) {
+    userInput = prompt(q2);
+
+    // 2nd Conditional Statement
+    if (userInput == 1){
+        prompt(q3);
+    }
+
+} else {
+    alert(gameOver1);
+}
