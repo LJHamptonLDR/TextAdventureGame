@@ -51,8 +51,36 @@ if (userInput == 1) {
     userInput = prompt(q2);
 
     // 2nd Conditional Statement
-    if (userInput == 1){
-        prompt(q3);
+    if (userInput == 1) {
+        userInput = prompt(q3);
+        alert(userInput);
+
+        // 3rd Conditional Statement
+        if (userInput == 2) {
+            userInput = prompt(q4);
+
+            // 4th Conditional Statement
+            if (userInput == 1) {
+               userInput = prompt(q5);
+
+                // 5th Conditional Statement
+                if (userInput == 2) {
+                    alert(win);
+                } else {
+                    alert(gameOver5);
+                }
+
+            } else {
+                alert(gameOver4);
+            }
+
+        } else {
+            alert(gameOver3);
+        }
+
+
+    } else {
+        alert(gameOver2);
     }
 
 } else {
